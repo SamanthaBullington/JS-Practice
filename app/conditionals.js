@@ -1,8 +1,7 @@
 //1. Given two numbers, write a function that will return  the larger number
 
 function largerNum(num1, num2) {
-    // you code here
-
+    return Math.max(num1, num2);
 }
 
 // 2. Given two numbers, amount correct and amount possible of a test, return the corresponding letter grade.
@@ -14,7 +13,21 @@ function largerNum(num1, num2) {
 // output: "F"
 
 function testGrader(score, possible) {
+    let grade = (score / possible);
 
+    if (grade >= 90 / 100) {
+        return ('A')
+    }
+    else if (grade >= 80 / 100) {
+        return ('B')
+    }
+    else if (grade >= 70 / 100) {
+        return ('C')
+    }
+    else if (grade >= 60 / 100) {
+        return ('D')
+    }
+    else return ('F')
 }
 
 
@@ -29,7 +42,7 @@ function testGrader(score, possible) {
 //Make sure your ranges are inclusive
 
 function timeOfDayGreeting(hour) {
-    // you code below
+
 
 }
 
